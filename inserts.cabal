@@ -1,5 +1,5 @@
 name:                inserts
-version:             0.1.0.0
+version:             0.1.0.1
 synopsis:            Stupid simple bytestring templates.
 description:         
   A template library that has two functions and a type in its API.
