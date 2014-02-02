@@ -1,10 +1,8 @@
 {-# LANGUAGE DeriveFunctor              #-}
-{-# LANGUAGE GeneralizedNewtypeDeriving #-}
-{-# LANGUAGE StandaloneDeriving         #-}
 {-# LANGUAGE OverloadedStrings          #-}
 
 -- |
--- Module      :  Text.Template.Interpolate
+-- Module      :  Text.Template.Inserts
 -- Copyright   :  Joseph Abrahamson 2014
 -- License     :  MIT
 --
@@ -13,7 +11,7 @@
 -- Portability :  unknown
 --
 -- Completely trivial, interpolation-only 'Template's; for when you want an API
--- that fits on a business card. "Text.Template.Interpolate" implements a
+-- that fits on a business card. "Text.Template.Inserts" implements a
 -- subset of Mustache syntax. It uses template strings with named holes
 -- deliminted by \"mustaches\":
 --
@@ -31,11 +29,11 @@
 -- >>> runTemplate (flip Map.lookup context) "My address is {{ address }}"
 -- Left ["address"]
 --
--- "Text.Template.Interpolate" seeks to be as unsurprising and simple as
+-- "Text.Template.Inserts" seeks to be as unsurprising and simple as
 -- possible sacrificing all kinds of niceities. Sometimes though, all you
--- need is obvious, trivial string interpolation.
+-- need is obvious, trivial string interpolation
 
-module Text.Template.Interpolate (
+module Text.Template.Inserts (
 
   Template, runTemplate, parseTemplate, templateParser
 

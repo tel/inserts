@@ -1,4 +1,4 @@
-# [Interpolate](http://hackage.haskell.org/package/interpolate)
+# [Template Inserts](http://hackage.haskell.org/package/inserts)
 
 *Stupid simple bytestring templates.*
 

@@ -1,4 +1,4 @@
-name:                interpolate
+name:                inserts
 version:             0.1.0.0
 synopsis:            Stupid simple bytestring templates.
 description:         
@@ -9,9 +9,9 @@ description:
   type, and manipulation of contexts abstractly. In those cases, I suggest
   @hastache@.
   .
-  Sometimes you just need to interpolate @ByteString@s into other @ByteString@s.
+  Sometimes you just need to inserts @ByteString@s into other @ByteString@s.
   In those cases, I suggest this library.
-homepage:            http://github.com/tel/interpolate
+homepage:            http://github.com/tel/inserts
 license:             MIT
 license-file:        LICENSE
 author:              Joseph Abrahamson
@@ -23,7 +23,7 @@ cabal-version:       >=1.10
 
 library
   exposed-modules:     
-    Text.Template.Interpolate
+    Text.Template.Inserts
   build-depends:       base       >= 4.6    && <4.7
                      , bytestring >= 0.10.4
                      , dlist      >= 0.6
