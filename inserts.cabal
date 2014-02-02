@@ -9,7 +9,7 @@ description:
   type, and manipulation of contexts abstractly. In those cases, I suggest
   @hastache@.
   .
-  Sometimes you just need to inserts @ByteString@s into other @ByteString@s.
+  Sometimes you just need to insert @ByteString@s into other @ByteString@s.
   In those cases, I suggest this library.
 homepage:            http://github.com/tel/inserts
 license:             MIT
