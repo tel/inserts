@@ -1,5 +1,5 @@
 name:                inserts
-version:             0.1.1
+version:             0.1.2
 synopsis:            Stupid simple bytestring templates.
 description:         
   A template library that has two functions and a type in its API.
@@ -25,7 +25,7 @@ library
   exposed-modules:     
     Text.Template.Inserts
     Text.Template.Inserts.Internal
-  build-depends:       base       >= 4.6    && <4.7
+  build-depends:       base       >= 4.6    && <4.8
                      , bytestring >= 0.10.4
                      , dlist      >= 0.6
                      , attoparsec >= 0.11

@@ -32,7 +32,6 @@ module Text.Template.Inserts.Internal (
 
 import           Control.Applicative
 import           Control.Monad
-import           Data.Attoparsec.ByteString.Char8 ((.*>), (<*.))
 import qualified Data.Attoparsec.ByteString.Char8 as A
 import qualified Data.ByteString                  as S
 import qualified Data.ByteString.Builder          as Sb
@@ -156,6 +155,6 @@ templateParser = foldMonoidM (Template . pure) templateChunk
 
     hole :: A.Parser TemplateC
     hole =
-      "{{" .*> A.skipSpace *>
+      "{{" *> A.skipSpace *>
       (Hole <$> A.takeWhile1 (\c -> not (A.isSpace c || c == '}')))
-      <* A.skipSpace <*. "}}"
+      <* A.skipSpace <* "}}"
